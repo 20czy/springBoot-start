@@ -5,17 +5,17 @@ import com.baomidou.mybatisplus.annotation.TableName;
 
 @TableName("user")
 public class User {
-    private int id;
+    private int sid;
     private String name;
     private int age;
     private String birthday;
 
     public int getId() {
-        return id;
+        return sid;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.sid = id;
     }
 
     public String getName() {
@@ -45,7 +45,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+                "id=" + sid +
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 ", birthday='" + birthday + '\'' +
